@@ -42,17 +42,17 @@ ul li:hover ul.dropdown {
     
     
 }
-.button{
+.button-item{
     font-size: 35px;
     background-color: aquamarine;
     border: 2px solid aquamarine;
     border-radius: 35px;
-    padding: 15px 25px;
+    padding: 15px 22px;
     font-weight: 600;
-    
     transition: all 0.3s linear;
 }
-.button:hover{
+.button-item:hover {
+    
     background-color: red;
     color: white;
     letter-spacing: 2px;
@@ -60,13 +60,19 @@ ul li:hover ul.dropdown {
 
 .coolbeans{
     margin: 0 50px 0 50px;
-    padding: 10px 15px;
+    padding: 15px 22px;
     border: 2px solid aqua;
     background-color: aqua;
     border-radius:35px;
     font-weight: 600;
     font-size: 35px;
+    transition: all 0.3s ease-in-out;
 }
+.coolbeans:hover {
+    background-color: blue;
+    color: white;
+}
+
 .emoji {
     font-size: 100px;
     animation: waving-hand 1s infinite;
@@ -263,6 +269,62 @@ img{
 .icon:hover .icon-box {
     transform: rotate(40deg);
 }
+.button{
+    padding: 0;
+    margin: 0 ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    justify-content: space-evenly;
+    align-content: stretch;
+}
+.button button, .button button{
+    position: relative;
+    display: block;
+    margin: 0 20px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 17px 60px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+button:hover{
+    box-shadow: rgba(0 0 0 0.25) 0px px 110px,rgba(0,0,0,0.12) 
+    0px -12px 30px,
+    rgba(0,0,0,0.12) 0px 4px 6px,rgba(0,0,0,0.17) 0px 12px 13px,
+    rgba(0,0,0,0.09) 0px -3px 5px;
+}
+.button button:after{
+    position: absolute;
+    content:'';
+    left: 0;
+    top:0;
+    height: 490%;
+    width: 140%;
+    background: green;
+    transition: all 0.5s ease-in-out;
+}
+.button button:after{
+    background: rgba(45,138,2);
+    transform: translate(-98%, -25%) rotate(35deg);
+}
+.button:hover button:after {
+    transform: translate(-9%,-25%) rotate(35deg);
+}
+button span{
+    position: relative;
+    z-index: 1;
+}
+
 
 img{
    max-width: 100%; 
